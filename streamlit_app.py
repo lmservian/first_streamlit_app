@@ -110,3 +110,5 @@ if streamlit.button('Add a Fruit to the List'):
 tab1, tab2 = streamlit.tabs(["Tab 1", "Tab2"])
 tab1.write("this is tab 1")
 tab2.write("this is tab 2")
+
+tab1.title('My Parents New Healthy Diner')
