@@ -1,5 +1,4 @@
 import pandas
-import requests
 import streamlit
 
 streamlit.text(fruityvice_response)
