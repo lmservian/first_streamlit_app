@@ -8,7 +8,6 @@ import streamlit
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-
 streamlit.title('My Parents New Healthy Diner')
 
 
@@ -105,3 +104,9 @@ if streamlit.button('Add a Fruit to the List'):
    #streamlit.write('Thanks for adding ', add_my_fruit)
    my_cnx.close()
 #
+
+
+# Insert containers separated into tabs:
+>>> tab1, tab2 = streamlit.tabs(["Tab 1", "Tab2"])
+>>> tab1.write("this is tab 1")
+>>> tab2.write("this is tab 2")
